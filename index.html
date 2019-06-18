@@ -9,10 +9,22 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     </head>
     <body>
-        <p>I Like Chicken Fingers and Pizza</p>
+        <div class="container-fluid" ng-app="app1" ng-controller="ctrl1">
+            <div class="form-group">
+                <label for="usr">Food 1:</label>
+                <input type="text" class="form-control" id="f1" ng-model="food1" />
+            </div>
+            <div class="form-group">
+                <label for="usr">Food 2:</label>
+                <input type="text" class="form-control" id="f2" ng-model="food2" />
+            </div>
+            <p>I Like {{food1}} and {{food2}}</p>
+        </div>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="app1.js"></script>
+        <script src="ctrl1.js"></script>
     </body>
 </html>
