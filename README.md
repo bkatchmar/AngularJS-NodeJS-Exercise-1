@@ -56,3 +56,6 @@ To accomplish other pretty cool effects with Bootstrap
 
 # index.html
 First file of the lesson, we are using this to give a crash course how AngularJS is used. We won't dive too deep into this, but this is to show how a basic structure for a single page app in AngularJS looks like with scope variables and binding. 
+
+# exercise-2.html
+This file demonstrates the repeat element and how ng-click works. I hard code several Rick Sanchez quotes and have it appear in an h2 tag once clicked.
