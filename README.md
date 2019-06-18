@@ -43,7 +43,7 @@ The base of this tutorial, one of the first files we include
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 ```
 
-Increasingly AngualrJS has been able to replace jQuery, but its still a good practice to include it unless we expliclty find ourselves not needing it.
+Increasingly AngularJS has been able to replace jQuery, but its still a good practice to include it unless we expliclty find ourselves not needing it.
 
 ### Bootstrap JS files
 
@@ -55,4 +55,4 @@ Increasingly AngualrJS has been able to replace jQuery, but its still a good pra
 To accomplish other pretty cool effects with Bootstrap
 
 # index.html
-First file of the lesson, we are using this to give a crash course how AngualrJS is used. We won't dive too deep into this, but this is to show how a basic structure for a single page app in AngularJS looks like with scope variables and binding. 
+First file of the lesson, we are using this to give a crash course how AngularJS is used. We won't dive too deep into this, but this is to show how a basic structure for a single page app in AngularJS looks like with scope variables and binding. 
