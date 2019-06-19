@@ -7,25 +7,28 @@
     <head>
         <title>Index</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="/css/base.css" />
+        <link rel="stylesheet" href="/css/base.css?" />
     </head>
     <body>
-        <div class="container-fluid" ng-app="app1" ng-controller="ctrl1">
+        <div class="container-fluid" ng-app="app1" ng-controller="ctrl3">
             <div class="form-group">
-                <label for="f1">Food 1:</label>
-                <input type="text" class="form-control" id="f1" ng-model="food1" />
+                <label for="f1">New Quote:</label>
+                <input type="text" class="form-control" id="f1" ng-model="userMessage" placeholder="Enter New Silly Catch Phrase" />
             </div>
-            <div class="form-group">
-                <label for="f2">Food 2:</label>
-                <input type="text" class="form-control" id="f2" ng-model="food2" />
+            <button type="button" class="btn btn-primary" ng-click="pushNewQuote()">Add New Quote</button>
+            <hr />
+            <h2>{{message}}</h2>
+            <div class="row">
+                <div class="col-md-4" ng-repeat="q in quotes">
+                    <button type="button" class="btn btn-primary" ng-click="changeQuote(q)">See Quote</button>
+                </div>
             </div>
-            <p>I Like {{food1}} and {{food2}}</p>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
         <script src="/js/app1.js"></script>
-        <script src="/js/ctrl1.js"></script>
+        <script src="/js/ctrl3.js"></script>
     </body>
 </html>
