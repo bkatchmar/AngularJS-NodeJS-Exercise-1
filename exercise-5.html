@@ -10,36 +10,18 @@
         <link rel="stylesheet" href="/css/base.css?" />
     </head>
     <body>
-        <div class="container-fluid" ng-app="app1" ng-controller="ctrl4">
+        <div class="container-fluid" ng-app="app1" ng-controller="ctrl5">
             <div class="form-group">
-                <input type="text" class="form-control" id="f1" ng-model="searchTerm" placeholder="Search President" />
+                <label for="sel1">Select list:</label>
+                <select class="form-control" id="sel1" ng-model="selectedItem" ng-options="item.name for item in items"></select>
             </div>
-            <hr />
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>President's Name</th>
-                        <th>Party</th>
-                        <th>Years Served</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr ng-repeat="p in items | filter:search">
-                        <td>{{p.president}}</td>
-                        <td>{{p.nm}}</td>
-                        <td>{{p.pp}}</td>
-                        <td>{{p.tm}}</td>
-                    </tr>
-                </tbody>
-            </table>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
         <script src="/js/app1.js"></script>
-        <script src="/js/service.js?"></script>
-        <script src="/js/ctrl4.js?d=201907101913"></script>
+        <script src="/js/service.js"></script>
+        <script src="/js/ctrl5.js?d=201909031643"></script>
     </body>
 </html>
